@@ -161,10 +161,11 @@ extension MasterViewController {
   }
   
   override public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    
     let cell = tableView.dequeueReusableCellWithIdentifier(TaskTableViewCell.cellIdentifierFromClassName(), forIndexPath: indexPath) as! TaskTableViewCell
     let task = taskForIndexPath(indexPath)
     cell.configureForTask(task)
-    
+    cell.delegate = self
     return cell
   }
 }
