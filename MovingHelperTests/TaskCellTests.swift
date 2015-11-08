@@ -1,7 +1,7 @@
 import UIKit
 import XCTest
 import MovingHelper
-
+ 
 class TaskCellTests: XCTestCase {
     
     func testCheckingCheckboxMarksTaskDone() {
